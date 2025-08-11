@@ -1,0 +1,37 @@
+.about{
+    // margin-top: 8em;
+    text-align: center;
+
+    &__title{
+        font-size:2em ;
+        font-weight: 600;
+        margin-bottom: .5em;
+    }
+
+    &__text{
+        margin-top: 5em;
+        display: flex;
+        gap: 5em;
+        text-align: left;
+        overflow: hidden;
+        align-items: center;
+
+        img{
+            transform: translateX(-4%);
+        }
+    }
+
+    &__containerMin{
+        width: 400px;
+
+        h3{
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        p{
+            margin: .5em 0 2em;
+        }
+    }
+}
+
