@@ -1,6 +1,9 @@
+// @use 'mixins';
 @use 'header';
 @use './sections/about';
 @use './sections/access';
+@use './sections/tools';
+@use './sections/download';
 
 // .bai-jamjuree-regular {
 //   font-family: "Bai Jamjuree", sans-serif;
@@ -13,6 +16,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 body{
     font-family: "Bai Jamjuree", sans-serif;;
@@ -45,11 +50,7 @@ p{
     // background-color: red;
 }
 
-@keyframes shine {
-    to {
-        left: 125%;
-    }
-}
+
 
 
 

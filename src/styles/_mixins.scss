@@ -1,0 +1,52 @@
+@mixin buttons{
+     margin-top: 3em;
+
+    &__ios, &__mac{
+        padding: 1em;
+        border-radius: 50px;
+        margin: 0 .5em;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.5) 50%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: skewX(-25deg);
+        }
+        
+        &:hover::before {
+            animation: shine 1s forwards;
+        }
+    }
+
+    &__ios{
+        background-color: hsl(171, 66%, 44%);
+        color: #fff;
+    }
+
+    &__mac{
+        background-color: hsl(233, 100%, 69%);
+        color: #fff;
+    }
+}
+
+@keyframes shine {
+    to {
+        left: 125%;
+    }
+}
+
