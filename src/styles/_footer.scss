@@ -1,0 +1,45 @@
+.footer{
+    background-color: hsl(0, 0%, 91%);
+    margin-top: 8em;
+    padding: 2em;
+
+    &__flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 13em;
+    }
+    
+    &__logo{
+        width: 3em;
+    }
+
+    &__links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__list{
+            display: flex;
+            gap: 5em;
+            
+            ul{
+                list-style: none;
+
+                a:hover{
+                    color: hsl(171, 66%, 44%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        img{
+            margin-right: 1em;
+            cursor: pointer;
+        }
+    }
+}
+
+
+

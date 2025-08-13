@@ -16,24 +16,24 @@
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <img src="./build/img/logo.svg" alt="">
-            <div class="container__min">
-                <h1 class="header__title">A history of everything you copy</h1>
-                <p> Clipboard allows you to track and organize everything you
-                    copy. Instantly access your clipboard on all your devices.
-                </p>
-                <div class="btns">
-                    <button type="button" class="btns__ios">
-                        Download for iOS
-                    </button>
-                    <button type="button" class="btns__mac">
-                        Download for Mac
-                    </button>
-                </div>
+    <header class="header">
+        <img src="./build/img/logo.svg" alt="logo">
+        <div class="container__min">
+            <h1 class="header__title">A history of everything you copy</h1>
+            <p> Clipboard allows you to track and organize everything you
+                copy. Instantly access your clipboard on all your devices.
+            </p>
+            <div class="btns">
+                <button type="button" class="btns__ios">
+                    Download for iOS
+                </button>
+                <button type="button" class="btns__mac">
+                    Download for Mac
+                </button>
             </div>
         </div>
+    </header>
+    <div class="container">
         <section class="about">
             <div class="container__min">
                 <h2 class="about__title">Keep track of your snippets</h2>
@@ -44,7 +44,7 @@
                 </p>
             </div>
             <div class="about__text">
-                <img src="./build/img/image-computer.png" alt="">
+                <img src="./build/img/image-computer.png" alt="image-computer">
                 <div class="about__containerMin">
                     <h3>Quick Search</h3>
                     <p>
@@ -72,7 +72,7 @@
                     snippets in a few simple clicks.
                 </p>
             </div>
-            <img src="./build/img/image-devices.png" alt="">
+            <img src="./build/img/image-devices.png" alt="image-devices">
         </section>
         <section class="tool">
             <div class="container__min">
@@ -85,7 +85,7 @@
             </div>
             <div class="tools">
                 <div>
-                    <img src="./build/img/icon-blacklist.svg" alt="">
+                    <img src="./build/img/icon-blacklist.svg" alt="icon-blacklist">
                     <h3 class="tools__title">
                         Create blacklists
                     </h3>
@@ -94,7 +94,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="./build/img/icon-text.svg" alt="">
+                    <img src="./build/img/icon-text.svg" alt="icon-text">
                     <h3 class="tools__title">
                         Plain text snippets
                     </h3>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="./build/img/icon-preview.svg" alt="">
+                    <img src="./build/img/icon-preview.svg" alt="icon-preview">
                     <h3 class="tools__title">
                         Sneak preview
                     </h3>
@@ -149,38 +149,44 @@
                 </div>
             </div>
         </section>
-        <footer>
-
-
-        </footer>
-
-
-
     </div>
-
-
-    <!-- 
-
-
-    
-
-    
-
-    
-    
-
-    FAQs
-    Contact Us
-    Privacy Policy
-    Press Kit
-    Install Guide
-
-    <footer>
-        <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
-        </p>
-    </footer> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <img class="footer__logo" src="./build/img/logo.svg" alt="logo">
+                <nav class="footer__links">
+                    <div class="footer__links__list">
+                        <ul>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Press Kit</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Install Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="./build/img/icon-facebook.svg" alt="facebook">
+                        <img src="./build/img/icon-twitter.svg" alt="twitter">
+                        <img src="./build/img/icon-instagram.svg" alt="instagram">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

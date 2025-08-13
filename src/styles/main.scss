@@ -1,9 +1,11 @@
-// @use 'mixins';
 @use 'header';
 @use './sections/about';
 @use './sections/access';
 @use './sections/tools';
 @use './sections/download';
+@use 'footer';
+@use './responsive/mobile';
+@use './responsive/tablet';
 
 // .bai-jamjuree-regular {
 //   font-family: "Bai Jamjuree", sans-serif;
@@ -17,8 +19,6 @@
     box-sizing: border-box;
 }
 
-
-
 body{
     font-family: "Bai Jamjuree", sans-serif;;
 }
@@ -31,10 +31,11 @@ section{
     margin-top: 8em;
 }
 
-p{
+p, a{
     font-size: 18px;
     color: hsl(201, 11%, 66%);
     line-height: 1.8em;
+    text-decoration: none;
 }
 
 .container{
@@ -49,9 +50,3 @@ p{
     margin: 0 auto;
     // background-color: red;
 }
-
-
-
-
-
-
