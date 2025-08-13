@@ -9,11 +9,8 @@
     "copy-img": "cpy \"src/img/**/*\" build/img",
     "watch-img": "chokidar \"src/img/**/*\" -c \"npm run copy-img\"",
 
-    "terser": "terser src/scripts/main.js -o build/scripts/main.min.js -c -m",
-    "watch-js": "chokidar \"src/scripts/**/*.js\" -c \"npm run terser\"",
-
-    "dev": "concurrently \"npm run watch-sass\" \"npm run watch-img\" \"npm run watch-js\"",
-    "build": "npm run sass && npm run copy-img && npm run terser",
+    "dev": "concurrently \"npm run watch-sass\" \"npm run watch-img\"",
+    "build": "npm run sass && npm run copy-img",
 
 
     "test": "echo \"Error: no test specified\" && exit 1"
